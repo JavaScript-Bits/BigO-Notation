@@ -25,7 +25,7 @@ function addUpTo(n){
 }
 ```
 
-The above function has 3 operations: \*, +, and / whether the input is 1 or 1000000.
+The above function has 3 operations: *, +, and / whether the input is 1 or 1000000.
 
 ```
 function addUpTo(n) {
@@ -41,9 +41,11 @@ This second function on the other hand has these operations from the first to th
 =(total = 0), =(let i = 1), <=n(i <= n) three times, +(i++) three times, +=(total +=1) three times.
 Now consider an inpout like n = 1000, those will be 1000 times more operations in the for loop.
 
-Given the examples above, the way Big O Notation is represented for the two scenarios is as follows:
+Given the examples above, the way Big O Notation is represented for the scenarios is as follows:
 
 - constant operations: O(1) - no. of operations remains the same despite the input value
 - inconsistent no. of operations: O(n) - no. of operations increases as the input value increases
+- for a for loop inside another for loop: O(n * n)
 
 ## Space Complexity
+The space that an algorithm takes up as the size of the input increases
