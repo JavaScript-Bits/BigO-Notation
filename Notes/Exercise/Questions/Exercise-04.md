@@ -1,0 +1,1 @@
+**Write a function that accepts an array of strings and return a new array that only contains the strings that start with the character 'd'. Use Big O Notation to describe the time complexity of the function.**
