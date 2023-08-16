@@ -82,3 +82,58 @@ function double(arr) {
 }
 ```
 This function on the other hand is `O(n)` since the array length grows hence more space occupied depending on the items in the input array.
+
+## Logarithms
+Sometimes Big O expressions involve more complex mathematical expressions i.e logarithms.
+
+A logarith is the inverse of exponantiation. Just like division and multiplication are a pair, the two are.
+The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than or equal to 1.
+
+#### Importance of Logarithms in Big O
+- Certain `Searching Algorithms` have Logarihtmic Time Complexity
+- Efficient `Sorting Algorithms` involve Logarithms
+- `Recursion` sometimes involves Logarithmic Space Complexity
+
+
+## Analysing Performance of Arrays and Objects in the lense of Big O Notation
+### Objects
+They are unordered key value pairs
+
+They work well when:
+- You don't need order
+- You need fast access / insertion and removal
+
+#### Big O of Objects
+- Insertion - O(1)
+- Removal - O(1)
+- Searching - O(n)
+- Access - O(1)
+
+#### Big O of Object Methods
+- Objects.keys - O(n)
+- Objects.values - O(n)
+- Objects.entries - O(n)
+- hasOwnProperty - O(1)
+
+### Arrays
+These are ordered lists
+
+They work well when:
+- You need order
+- You need fast access / insertion and removal
+
+#### Big O of Arrays
+- Insertion - depends on where we are inserting: end - O(1), beginning - O(n)
+- Removal - depends on where we are removing: end - O(1), beginning - O(n)
+- Searching - O(n)
+- Access - O(1)
+
+#### Big O of Array Methods
+- push - O(1)
+- pop - O(1)
+- shift - O(n)
+- unshift - O(n)
+- concat - O(n)
+- slice - O(n)
+- sort - O(n * log n)
+- for each/map/filter/reduce... - O(n)
