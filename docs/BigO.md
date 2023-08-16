@@ -48,4 +48,37 @@ Given the examples above, the way Big O Notation is represented for the scenario
 - for a for loop inside another for loop: O(n * n)
 
 ## Space Complexity
-The space that an algorithm takes up as the size of the input increases
+The space that an algorithm takes up as the size of the input increases.
+
+When we talk about space complexity we mostly refer to `Auxiliary Space Complexity` which refers to the space required by the algorithm, not including space taken up by the inputs.
+
+#### Rules of Thumb
+- Most primitives(booleans, numbers, undefined, null) are constant space.
+- Strings require O(n) space (where n is the string length)
+- Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects)
+
+Example 1:
+```
+function addUpTo(n) {
+    let total = 0;
+    for(let i = 1; i <= n; i++){
+        total +=1;
+    }
+    return total;
+}
+```
+
+Here we have two variables taking up space while the algorithm executes: `total` and `i`. Regardless of the size of the input there will always be two spaces used hence the function above represents `O(1)` space complexity.
+
+Example 2:
+
+```
+function double(arr) {
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        newArr.push(2 * arr[i])
+    }
+    return newArr;
+}
+```
+This function on the other hand is `O(n)` since the array length grows hence more space occupied depending on the items in the input array.
