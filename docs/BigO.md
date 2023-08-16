@@ -4,7 +4,7 @@ Big O Notation is a way to formalize fuzzy counting.
 It allows us to talk formally about how the runtime of an algorithm grows as the inputs grow.
 It is used to analyze the performance of an algorithm.
 
-A good perfroming algorithm is:
+A good performing algorithm is:
 
 - faster
 - occupies less memory during its operation
@@ -53,7 +53,7 @@ The space that an algorithm takes up as the size of the input increases.
 When we talk about space complexity we mostly refer to `Auxiliary Space Complexity` which refers to the space required by the algorithm, not including space taken up by the inputs.
 
 #### Rules of Thumb
-- Most primitives(booleans, numbers, undefined, null) are constant space.
+- Most primitives(boolean, numbers, undefined, null) are constant space.
 - Strings require O(n) space (where n is the string length)
 - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects)
 
@@ -86,16 +86,16 @@ This function on the other hand is `O(n)` since the array length grows hence mor
 ## Logarithms
 Sometimes Big O expressions involve more complex mathematical expressions i.e logarithms.
 
-A logarith is the inverse of exponantiation. Just like division and multiplication are a pair, the two are.
+A logarithm is the inverse of exponentiation. Just like division and multiplication are a pair, the two are.
 The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than or equal to 1.
 
 #### Importance of Logarithms in Big O
-- Certain `Searching Algorithms` have Logarihtmic Time Complexity
+- Certain `Searching Algorithms` have Logarithmic Time Complexity
 - Efficient `Sorting Algorithms` involve Logarithms
 - `Recursion` sometimes involves Logarithmic Space Complexity
 
 
-## Analysing Performance of Arrays and Objects in the lense of Big O Notation
+## Analysing Performance of Arrays and Objects in the lens of Big O Notation
 ### Objects
 They are unordered key value pairs
 
