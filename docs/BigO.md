@@ -38,8 +38,8 @@ function addUpTo(n) {
 ```
 
 This second function on the other hand has these operations from the first to the last if you consider n to be 3:
-=(total = 0), =(let i = 1), <=n(i <= n) three times, +(i++) three times, +=(total +=1) three times.
-Now consider an inpout like n = 1000, those will be 1000 times more operations in the for loop.
+(total = 0), (let i = 1), <=n(i <= n) three times, +(i++) three times, +=(total +=1) three times.
+Now consider an input like n = 1000, those will be 1000 times more operations in the for loop.
 
 Given the examples above, the way Big O Notation is represented for the scenarios is as follows:
 
