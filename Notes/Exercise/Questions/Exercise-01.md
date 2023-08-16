@@ -7,3 +7,5 @@ function isLeapYear(year){
 }
 
 ````
+
+The time complexity for  `isLeapYear` is: `O(1)`. Regardless of the input the algorithm will still go through the same number of operations during operation.

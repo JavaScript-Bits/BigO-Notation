@@ -12,3 +12,5 @@ const median (array) => {
 }
 
 ```
+
+The time complexity for  `median` is: `O(1)`. Regardless of the length of the input array accessing the middle elements will take constant time.

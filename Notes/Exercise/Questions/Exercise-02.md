@@ -12,3 +12,5 @@ const sumOfArray = (array) => {
 }
 
 ```
+
+The time complexity for  `sumOfArray` is: `O(n)`. The number of operations that will be used in the for loop will increase as the input increases.
